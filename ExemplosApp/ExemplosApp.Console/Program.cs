@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExemplosAppConsole
 {
-    public class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
@@ -30,7 +30,7 @@ namespace ExemplosAppConsole
                  
             Console.WriteLine("Nome completo: " + NomeCompleto(nomePessoa, sobrenome) );
 
-            EscreveDiferencaIdade (idadeDaMae, idade)
+            EscreveDiferencaIdade(idadeDaMae, idade);
 
             Console.ReadKey();
 
@@ -45,7 +45,7 @@ namespace ExemplosAppConsole
         static void EscreveDiferencaIdade(int idadeMaisVelho, int idadeMaisNovo)
 
         {
-            Console.WriteLine("Diferença: " + (idadeMaisVelho - idadeaMaisNovo).ToString());
+            Console.WriteLine("Diferença: " + (idadeMaisVelho - idadeMaisNovo).ToString());
         }
 
     }
